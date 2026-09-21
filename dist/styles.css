@@ -15,8 +15,9 @@ a { color:inherit; text-decoration:none; }
 .hero h1 { margin:0; font-size:clamp(2.65rem,4.55vw,4.35rem); line-height:1.08; letter-spacing:-.065em; font-weight:780; }
 .lead { margin:3.4rem 0 1.1rem; font-size:1.06rem; line-height:1.75; font-weight:650; letter-spacing:-.02em; }
 .subcopy { max-width:590px; margin:0; color:#7a7d7b; font-size:.93rem; line-height:1.8; }
-.instagram-button { display:inline-flex; align-items:center; gap:.45rem; margin-top:2rem; padding:.72rem 1.05rem; border:1px solid #777a78; border-radius:999px; font-size:.8rem; transition:background .2s,color .2s; }
-.instagram-button:hover { color:var(--paper); background:var(--ink); }
+.hero-actions { display:flex; flex-wrap:wrap; gap:.65rem; margin-top:2rem; }
+.social-button { display:inline-flex; align-items:center; gap:.45rem; padding:.72rem 1.05rem; border:1px solid #777a78; border-radius:999px; font-size:.8rem; transition:background .2s,color .2s; }
+.social-button:hover { color:var(--paper); background:var(--ink); }
 .hero-image-wrap { margin:0; aspect-ratio:1/1.18; overflow:hidden; border-radius:5rem; background:#dbe4e2; }
 .hero-image-wrap img { display:block; width:100%; height:100%; object-fit:cover; }
 .services { padding:7.7rem 0 7rem; border-top:1px solid var(--line); }
@@ -47,6 +48,8 @@ h2 { margin:0; font-size:clamp(2.2rem,4vw,3.4rem); line-height:1.1; letter-spaci
 .icon-saju small { position:absolute; left:11%; bottom:9%; z-index:2; font-size:.56rem; letter-spacing:.32em; }.icon-saju>i{position:absolute;z-index:2;right:16%;top:13%;font-size:1.7rem;font-style:normal}
 .service-list { margin-top:6rem; border-top:1px solid var(--line); }
 .service-row { min-height:145px; display:grid; grid-template-columns:92px 1fr auto; gap:1.8rem; align-items:center; border-bottom:1px solid var(--line); scroll-margin-top:2rem; }
+.service-row { transition:background .2s,padding .2s; }
+.service-row:hover { padding-inline:1rem; background:rgba(185,208,214,.16); }
 .mini-icon { width:74px; height:74px; border-radius:1.25rem; }
 .mini-icon b { font-size:1.25rem; }
 .service-row h3 { margin:0 0 .4rem; font-size:1.18rem; letter-spacing:-.04em; }
@@ -78,7 +81,8 @@ footer { min-height:110px; display:flex; align-items:center; justify-content:spa
   .hero h1 { margin-right:-132px; margin-bottom:2.6rem; font-size:clamp(2.15rem,8.9vw,2.8rem); line-height:1.1; }
   .lead { margin-top:0; }
   .lead,.subcopy { font-size:.84rem; }
-  .instagram-button { width:auto; justify-content:center; margin-top:1.4rem; padding:.62rem .9rem; }
+  .hero-actions { margin-top:1.4rem; gap:.5rem; }
+  .social-button { width:auto; justify-content:center; padding:.62rem .9rem; }
   .hero-image-wrap { position:absolute; top:12.8rem; right:0; width:116px; aspect-ratio:1/1.22; border-radius:1.8rem; }
   .services { padding:5.4rem 0; }
   .app-shelf { margin-top:2.7rem; }
