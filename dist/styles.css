@@ -1,0 +1,96 @@
+:root { --paper:#f4f3ef; --ink:#242725; --muted:#777b78; --line:#deded8; --blue:#b9d0d6; --blue-strong:#8fafb6; --beige:#e8dfd0; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--paper); font-family:"Pretendard Variable",Pretendard,"Noto Sans KR","Apple SD Gothic Neo",Arial,sans-serif; word-break:keep-all; }
+a { color:inherit; text-decoration:none; }
+.site-header,main,footer { width:min(1100px,calc(100% - 48px)); margin-inline:auto; }
+.site-header { height:84px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
+.wordmark { font-size:1.08rem; font-weight:850; letter-spacing:-.045em; }
+.site-header nav { display:flex; align-items:center; gap:1.5rem; }
+.site-header nav a { color:#737674; font-size:.82rem; transition:color .2s; }
+.site-header nav a:hover { color:var(--ink); }
+.site-header nav span { margin-left:.15rem; }
+.hero { min-height:650px; padding:5.7rem 0 5.4rem; display:grid; grid-template-columns:1.25fr .75fr; gap:5rem; align-items:center; }
+.hero-copy { min-width:0; }
+.hero h1 { margin:0; font-size:clamp(2.65rem,4.55vw,4.35rem); line-height:1.08; letter-spacing:-.065em; font-weight:780; }
+.lead { margin:3.4rem 0 1.1rem; font-size:1.06rem; line-height:1.75; font-weight:650; letter-spacing:-.02em; }
+.subcopy { max-width:590px; margin:0; color:#7a7d7b; font-size:.93rem; line-height:1.8; }
+.instagram-button { display:inline-flex; align-items:center; gap:.45rem; margin-top:2rem; padding:.72rem 1.05rem; border:1px solid #777a78; border-radius:999px; font-size:.8rem; transition:background .2s,color .2s; }
+.instagram-button:hover { color:var(--paper); background:var(--ink); }
+.hero-image-wrap { margin:0; aspect-ratio:1/1.18; overflow:hidden; border-radius:5rem; background:#dbe4e2; }
+.hero-image-wrap img { display:block; width:100%; height:100%; object-fit:cover; }
+.services { padding:7.7rem 0 7rem; border-top:1px solid var(--line); }
+.section-label { margin:0 0 .8rem; color:#8a8d89; font-size:.7rem; font-weight:650; letter-spacing:.18em; }
+h2 { margin:0; font-size:clamp(2.2rem,4vw,3.4rem); line-height:1.1; letter-spacing:-.06em; }
+.app-shelf { display:grid; grid-template-columns:repeat(4,1fr); gap:1.8rem; margin-top:3.7rem; }
+.app-item { min-width:0; text-align:center; }
+.app-icon,.mini-icon { position:relative; display:block; overflow:hidden; aspect-ratio:1; border-radius:2.2rem; box-shadow:0 10px 25px rgba(58,66,63,.07); transition:transform .25s,box-shadow .25s; }
+.app-icon { background:#e8e5dd; }
+.app-icon img,.mini-icon img { display:block; width:100%; height:100%; object-fit:cover; }
+.dotorycount-icon { background:linear-gradient(145deg,#dfeaec,#eee7d9); }
+.dotorycount-icon img { object-fit:contain; padding:4%; }
+.app-item:hover .app-icon { transform:translateY(-6px); box-shadow:0 17px 32px rgba(58,66,63,.13); }
+.app-name { display:block; margin-top:.8rem; color:#838683; font-size:.78rem; }
+.app-description { display:block; margin:.55rem auto 0; color:#8a8d89; font-size:.76rem; line-height:1.55; text-align:center; }
+.app-icon b,.mini-icon b { position:absolute; z-index:2; left:11%; top:11%; font-size:clamp(2rem,3.5vw,3.7rem); line-height:.83; letter-spacing:-.1em; text-align:left; }
+.icon-land { background:#c6dade; }
+.icon-land::after { content:""; position:absolute; width:115%; height:55%; left:-25%; bottom:-18%; border-radius:50% 50% 0 0; background:#8da79a; transform:rotate(7deg); }
+.land-dot { position:absolute; z-index:1; border-radius:50%; background:#eee2bd; }.land-dot.one{width:44%;height:44%;right:7%;top:17%}.land-dot.two{width:10%;height:10%;right:16%;bottom:16%;background:#607c70}
+.icon-baseball { color:#e7e5da; background:#344f58; }
+.icon-baseball::after { content:""; position:absolute; width:58%; height:58%; right:-8%; bottom:-8%; border-radius:50%; background:#eeeae0; border:2px dashed #ad6962; }
+.icon-baseball .baseball-mark { position:absolute; z-index:2; right:10%; bottom:10%; font-size:3.1rem; font-style:normal; }
+.icon-2000 { color:#263b40; background:#acc7cd; background-image:linear-gradient(rgba(255,255,255,.22) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.22) 1px,transparent 1px); background-size:18px 18px; }
+.icon-2000 small { position:absolute; left:9%; top:8%; padding:.28rem .38rem; color:white; background:#31484d; font:600 clamp(.38rem,.7vw,.62rem) monospace; }
+.icon-2000 b { top:auto; bottom:10%; font-size:clamp(1.9rem,3vw,3.2rem); text-shadow:2px 2px #eae3d7; }.icon-2000 b em{font-family:Georgia,serif;font-weight:400}.icon-2000>i{position:absolute;right:10%;top:21%;color:white;font-size:2.5rem;text-shadow:2px 2px #31484d;font-style:normal}
+.icon-saju { color:#465b60; background:#dddcd5; }
+.icon-saju::after { content:""; position:absolute; width:64%; height:64%; right:-10%; bottom:4%; border-radius:50%; background:#b4cbd0; box-shadow:inset 2.2rem -1.2rem #ebe5d8; }
+.icon-saju small { position:absolute; left:11%; bottom:9%; z-index:2; font-size:.56rem; letter-spacing:.32em; }.icon-saju>i{position:absolute;z-index:2;right:16%;top:13%;font-size:1.7rem;font-style:normal}
+.service-list { margin-top:6rem; border-top:1px solid var(--line); }
+.service-row { min-height:145px; display:grid; grid-template-columns:92px 1fr auto; gap:1.8rem; align-items:center; border-bottom:1px solid var(--line); scroll-margin-top:2rem; }
+.mini-icon { width:74px; height:74px; border-radius:1.25rem; }
+.mini-icon b { font-size:1.25rem; }
+.service-row h3 { margin:0 0 .4rem; font-size:1.18rem; letter-spacing:-.04em; }
+.service-row p { margin:0; color:#808481; font-size:.9rem; line-height:1.6; }
+.service-number { color:#a6a9a6; font:500 .72rem monospace; }
+.in-development { padding:7rem 0 8.5rem; border-top:1px solid var(--line); }
+.development-shelf { margin-top:3.7rem; }
+.coming-list { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:3rem; }
+.coming-card { position:relative; min-height:210px; padding:1.7rem; border:1px solid var(--line); border-radius:1.5rem; background:#ecebe6; display:flex; flex-direction:column; }
+.coming-no { color:#999d99; font:500 .68rem monospace; }
+.coming-card strong { margin-top:auto; font-size:1.3rem; letter-spacing:-.04em; }
+.coming-card p { margin:.45rem 0 0; color:#858885; font-size:.85rem; }
+.status { position:absolute; right:1.2rem; top:1.2rem; padding:.35rem .55rem; border:1px solid #b9bbb8; border-radius:999px; color:#818481; font-size:.58rem; letter-spacing:.1em; }
+footer { min-height:110px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--line); color:#888b88; font-size:.7rem; }
+@media(max-width:600px){
+  .hero { min-height:0; padding:4.2rem 0 5rem; grid-template-columns:1fr; gap:3.5rem; }
+  .hero h1 { font-size:clamp(2.35rem,9.2vw,3.35rem); }
+  .lead { margin-top:2.4rem; }
+  .hero-image-wrap { width:min(100%,430px); aspect-ratio:1; border-radius:3.5rem; justify-self:center; }
+  .app-shelf { grid-template-columns:repeat(2,1fr); gap:2.1rem 1rem; }
+  .app-icon { border-radius:1.8rem; }.app-icon b{font-size:clamp(2.4rem,10vw,4.2rem)}
+}
+@media(max-width:540px){
+  .site-header,main,footer { width:calc(100% - 32px); }
+  .site-header { height:70px; }
+  .wordmark { font-size:.98rem; }
+  .hero { position:relative; display:block; padding:3.4rem 0 5rem; }
+  .hero-copy { padding-right:132px; }
+  .hero h1 { margin-right:-132px; margin-bottom:2.6rem; font-size:clamp(2.15rem,8.9vw,2.8rem); line-height:1.1; }
+  .lead { margin-top:0; }
+  .lead,.subcopy { font-size:.84rem; }
+  .instagram-button { width:auto; justify-content:center; margin-top:1.4rem; padding:.62rem .9rem; }
+  .hero-image-wrap { position:absolute; top:12.8rem; right:0; width:116px; aspect-ratio:1/1.22; border-radius:1.8rem; }
+  .services { padding:5.4rem 0; }
+  .app-shelf { margin-top:2.7rem; }
+  .app-icon { border-radius:1.5rem; }
+  .service-list { margin-top:4.5rem; }
+  .service-row { min-height:124px; grid-template-columns:68px 1fr; gap:1.1rem; }
+  .mini-icon { width:62px; height:62px; border-radius:1rem; }
+  .mini-icon b { font-size:1.05rem; }
+  .service-row p { font-size:.78rem; }
+  .service-number { display:none; }
+  .in-development { padding:5.5rem 0 6rem; }
+  .coming-list { grid-template-columns:1fr; }
+  footer { min-height:100px; }
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.app-icon{transition:none}}
