@@ -1,5 +1,7 @@
 # dotoryarchieve
 
-Dotoryman이 기획하고 개발한 개인 웹·앱 서비스를 소개하는 포트폴리오입니다.
-우땅랜드, 우땅야구, backto2000, 사주사주와 개발 예정 서비스를 한곳에서 보여줍니다.
-모바일과 데스크톱 환경에 맞춘 반응형 정적 사이트입니다.
+직접 만든 웹과 앱 서비스를 한곳에 소개하는 반응형 포트폴리오입니다.
+
+A responsive portfolio showcasing my web and mobile projects in one place.
+
+**언어 및 기술 · Languages & Technologies:** HTML · CSS · Static Site
