@@ -12,7 +12,8 @@ a { color:inherit; text-decoration:none; }
 .site-header nav span { margin-left:.15rem; }
 .hero { min-height:650px; padding:5.7rem 0 5.4rem; display:grid; grid-template-columns:1.25fr .75fr; gap:5rem; align-items:center; }
 .hero-copy { min-width:0; }
-.hero h1 { margin:0; font-size:clamp(2.65rem,4.55vw,4.35rem); line-height:1.08; letter-spacing:-.065em; font-weight:780; }
+.hero h1 { margin:0; font-size:clamp(2rem,3vw,2.5rem); line-height:1.15; letter-spacing:-.055em; font-weight:780; }
+.mobile-title-break { display:none; }
 .lead { margin:3.4rem 0 1.1rem; font-size:1.06rem; line-height:1.75; font-weight:650; letter-spacing:-.02em; }
 .subcopy { max-width:590px; margin:0; color:#7a7d7b; font-size:.93rem; line-height:1.8; }
 .hero-actions { display:flex; flex-wrap:wrap; gap:.65rem; margin-top:2rem; }
@@ -66,7 +67,7 @@ h2 { margin:0; font-size:clamp(2.2rem,4vw,3.4rem); line-height:1.1; letter-spaci
 footer { min-height:110px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--line); color:#888b88; font-size:.7rem; }
 @media(max-width:600px){
   .hero { min-height:0; padding:4.2rem 0 5rem; grid-template-columns:1fr; gap:3.5rem; }
-  .hero h1 { font-size:clamp(2.35rem,9.2vw,3.35rem); }
+  .hero h1 { font-size:clamp(1.9rem,5.8vw,2.3rem); }
   .lead { margin-top:2.4rem; }
   .hero-image-wrap { width:min(100%,430px); aspect-ratio:1; border-radius:3.5rem; justify-self:center; }
   .app-shelf { grid-template-columns:repeat(2,1fr); gap:2.1rem 1rem; }
@@ -78,7 +79,8 @@ footer { min-height:110px; display:flex; align-items:center; justify-content:spa
   .wordmark { font-size:.98rem; }
   .hero { position:relative; display:block; padding:3.4rem 0 5rem; }
   .hero-copy { padding-right:132px; }
-  .hero h1 { margin-right:-132px; margin-bottom:2.6rem; font-size:clamp(2.15rem,8.9vw,2.8rem); line-height:1.1; }
+  .hero h1 { margin-right:-132px; margin-bottom:2.6rem; font-size:clamp(1.65rem,7vw,1.9rem); line-height:1.18; }
+  .mobile-title-break { display:initial; }
   .lead { margin-top:0; }
   .lead,.subcopy { font-size:.84rem; }
   .hero-actions { margin-top:1.4rem; gap:.5rem; }
