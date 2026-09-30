@@ -7,3 +7,5 @@ https://dotoryman.com
 A responsive portfolio showcasing my web and mobile projects in one place.
 
 **언어 및 기술 · Languages & Technologies:** HTML · CSS · Static Site
+
+.
