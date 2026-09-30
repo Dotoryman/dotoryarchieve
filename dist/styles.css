@@ -24,7 +24,7 @@ a { color:inherit; text-decoration:none; }
 .services { padding:7.7rem 0 7rem; border-top:1px solid var(--line); }
 .section-label { margin:0 0 .8rem; color:#8a8d89; font-size:.7rem; font-weight:650; letter-spacing:.18em; }
 h2 { margin:0; font-size:clamp(2.2rem,4vw,3.4rem); line-height:1.1; letter-spacing:-.06em; }
-.app-shelf { display:grid; grid-template-columns:repeat(4,1fr); gap:1.8rem; margin-top:3.7rem; }
+.app-shelf { display:grid; grid-template-columns:repeat(5,1fr); gap:1.8rem; margin-top:3.7rem; }
 .app-item { min-width:0; text-align:center; }
 .app-icon,.mini-icon { position:relative; display:block; overflow:hidden; aspect-ratio:1; border-radius:2.2rem; box-shadow:0 10px 25px rgba(58,66,63,.07); transition:transform .25s,box-shadow .25s; }
 .app-icon { background:#e8e5dd; }
