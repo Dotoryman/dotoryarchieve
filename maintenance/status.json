@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "repository": "Dotoryman/dotoryarchieve",
+  "project_kind": "static",
+  "checked_date_kst": "2026-10-01",
+  "checked_at_utc": "2026-10-01T00:10:49.042Z",
+  "default_branch": "main",
+  "inspected_commit": "c14f60d63c1a60b01a4325554b2bc76b30c27338",
+  "workflow_run": "https://github.com/Dotoryman/dotoryarchieve/actions/runs/36794837590",
+  "inventory": {
+    "tracked_project_files": 16,
+    "tracked_project_bytes": 11395319,
+    "content_sha256": "539d46d39da06173c416abda758c6d3800f008cc0d7a38565df1a7f269f5d343",
+    "html_files": 1,
+    "css_files": 1,
+    "static_assets": 11,
+    "external_links": [
+      "https://backto2000.cloud/",
+      "https://christmasvillage.cloud/",
+      "https://github.com/Dotoryman",
+      "https://sajusaju.cloud/",
+      "https://utangbaseball.cloud/",
+      "https://utangland.cloud/",
+      "https://www.instagram.com/dotoryman/"
+    ]
+  },
+  "checks": [
+    {
+      "name": "README present and nonempty",
+      "passed": true,
+      "details": "Tracked README.md"
+    },
+    {
+      "name": "HTML local references: dist/index.html",
+      "passed": true,
+      "details": {
+        "references_checked": 16,
+        "missing": []
+      }
+    },
+    {
+      "name": "Portfolio entry point present",
+      "passed": true,
+      "details": "External sites were not requested; this checks repository files only."
+    }
+  ],
+  "result": "passed",
+  "scope": "Repository structure, manifest consistency and tracked asset references only. Application tests, builds, dependency vulnerability scans and live service availability are not assessed."
+}
