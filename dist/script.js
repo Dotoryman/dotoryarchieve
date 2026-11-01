@@ -1,26 +1,39 @@
 (() => {
-  const hover = matchMedia('(hover: hover) and (pointer: fine)');
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  document.querySelectorAll('.app-item,.hero-copy').forEach(surface => {
-    surface.addEventListener('pointermove', event => {
-      if (!hover.matches || reduced.matches) return;
-      const rect = surface.getBoundingClientRect();
-      surface.style.setProperty('--shine-x', ((event.clientX - rect.left) / rect.width * 100).toFixed(1) + '%');
-      surface.style.setProperty('--shine-y', ((event.clientY - rect.top) / rect.height * 100).toFixed(1) + '%');
+  'use strict';
+  const filters = [...document.querySelectorAll('[data-filter]')];
+  const projects = [...document.querySelectorAll('.project')];
+  const status = document.querySelector('#filter-status');
+  const names = { all:'전체', web:'웹', app:'앱', upcoming:'개발 예정' };
+  filters.forEach(button => button.addEventListener('click', () => {
+    const kind = button.dataset.filter;
+    filters.forEach(filter => filter.setAttribute('aria-pressed', String(filter === button)));
+    let shown = 0;
+    projects.forEach(project => {
+      const visible = kind === 'all' || project.dataset.kind === kind || (kind === 'upcoming' && project.dataset.status === 'upcoming');
+      project.hidden = !visible;
+      if (visible) shown++;
     });
-  });
-  document.querySelectorAll('.app-item').forEach(item => {
-    item.addEventListener('pointermove', event => {
-      if (!hover.matches || reduced.matches) return;
-      const bounds = item.querySelector('.app-icon').getBoundingClientRect();
-      const x = Math.max(-.5, Math.min(.5, (event.clientX - bounds.left) / bounds.width - .5));
-      const y = Math.max(-.5, Math.min(.5, (event.clientY - bounds.top) / bounds.height - .5));
-      item.style.setProperty('--tilt-x', (-y * 9).toFixed(2) + 'deg');
-      item.style.setProperty('--tilt-y', (x * 9).toFixed(2) + 'deg');
+    status.textContent = `${names[kind]} 서비스 ${shown}개를 표시합니다.`;
+  }));
+  let lastOpener = null;
+  const dialogs = [...document.querySelectorAll('dialog')];
+  document.querySelectorAll('[data-dialog]').forEach(opener => opener.addEventListener('click', () => {
+    const dialog = document.getElementById(opener.dataset.dialog);
+    if (!dialog) return;
+    lastOpener = opener;
+    dialog.showModal();
+    document.documentElement.style.overflow = 'hidden';
+  }));
+  dialogs.forEach(dialog => {
+    dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => {
+      if (event.target !== dialog) return;
+      const box = dialog.getBoundingClientRect();
+      if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close();
     });
-    item.addEventListener('pointerleave', () => {
-      item.style.removeProperty('--tilt-x');
-      item.style.removeProperty('--tilt-y');
+    dialog.addEventListener('close', () => {
+      document.documentElement.style.overflow = '';
+      lastOpener?.focus({ preventScroll: true });
     });
   });
 })();

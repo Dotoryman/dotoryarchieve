@@ -1,113 +1,129 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f4f3ef" />
-    <meta name="description" content="웹·앱 서비스 기획 및 개발자 Dotoryman의 개인 개발 서비스 소개 페이지입니다." />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ko_KR" />
-    <meta property="og:site_name" content="Dotoryman" />
-    <meta property="og:title" content="Dotoryman | 웹·앱 서비스 기획 및 개발" />
-    <meta property="og:description" content="직접 기획하고 개발한 웹·앱 서비스를 소개합니다." />
-    <meta property="og:url" content="https://dotoryman.com/" />
-    <meta property="og:image" content="https://dotoryman.com/assets/dotoryman-social-glass.png" />
-    <meta property="og:image:width" content="1730" />
-    <meta property="og:image:height" content="909" />
-    <meta property="og:image:alt" content="베이지 배경의 투명 유리 패널에 담긴 Dotoryman 웹·앱 서비스 기획 및 개발 문구" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Dotoryman | 웹·앱 서비스 기획 및 개발" />
-    <meta name="twitter:description" content="직접 기획하고 개발한 웹·앱 서비스를 소개합니다." />
-    <meta name="twitter:image" content="https://dotoryman.com/assets/dotoryman-social-glass.png" />
-    <title>DOTORYMAN | Web &amp; App Service Creator</title>
-    <link rel="icon" type="image/png" sizes="256x256" href="./assets/favicon-character.png?v=hotfix-1" />
-    <link rel="apple-touch-icon" href="./assets/favicon-character.png?v=hotfix-1" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="wordmark" href="/" aria-label="DOTORYMAN 홈 다시 열기">DOTORYMAN</a>
-      <nav aria-label="소셜 링크">
-        <a href="https://www.instagram.com/dotoryman/" target="_blank" rel="noreferrer">Instagram <span>↗</span></a>
-        <a href="https://github.com/Dotoryman" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fcfbf8" />
+  <meta name="description" content="Dotoryman이 직접 기획하고 만든 웹·앱 서비스들을 소개합니다." />
+  <link rel="canonical" href="https://dotoryman.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:site_name" content="Dotoryman" />
+  <meta property="og:title" content="Dotoryman | 웹·앱 서비스 기획 및 개발" />
+  <meta property="og:description" content="직접 기획하고 개발한 웹·앱 서비스를 소개합니다." />
+  <meta property="og:url" content="https://dotoryman.com/" />
+  <meta property="og:image" content="https://dotoryman.com/assets/dotoryman-social-glass.png" />
+  <meta property="og:image:width" content="1730" />
+  <meta property="og:image:height" content="909" />
+  <meta property="og:image:alt" content="베이지 배경의 투명 유리 패널에 담긴 Dotoryman 웹·앱 서비스 기획 및 개발 문구" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dotoryman | 웹·앱 서비스 기획 및 개발" />
+  <meta name="twitter:description" content="직접 기획하고 개발한 웹·앱 서비스를 소개합니다." />
+  <meta name="twitter:image" content="https://dotoryman.com/assets/dotoryman-social-glass.png" />
+  <title>DOTORYMAN — Web &amp; App</title>
+  <link rel="icon" href="./assets/favicon-character.png" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/favicon-character.png" />
+  <link rel="stylesheet" href="./styles.css?v=20261101" />
+  <script src="./script.js?v=20261101" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#projects">서비스 목록으로 건너뛰기</a>
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="Dotoryman 홈 다시 열기">DOTORYMAN</a>
+    <div class="header-row">
+      <div class="social-links" aria-label="소셜 링크">
+        <a href="https://www.instagram.com/dotoryman/" target="_blank" rel="noopener noreferrer" aria-label="Instagram, 새 창">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://github.com/Dotoryman" target="_blank" rel="noopener noreferrer" aria-label="GitHub, 새 창">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.3 20v-3.1c-3 .6-3.5-1.3-4.4-1.7M15.7 20v-3.8c0-.9-.3-1.5-.8-1.8 2.7-.3 5.4-1.2 5.4-5.4 0-1.2-.4-2.2-1.1-3 .1-.8.1-1.6-.3-2.5-1.4 0-2.6.8-3.3 1.3a11.8 11.8 0 0 0-6.7 0c-.8-.5-2-1.3-3.4-1.3-.4.9-.4 1.7-.3 2.5-.7.8-1.1 1.8-1.1 3 0 4.2 2.7 5.1 5.4 5.4-.5.3-.8.9-.8 1.8V20"/></svg>
+        </a>
+      </div>
+      <nav class="main-nav" aria-label="메인 메뉴">
+        <a class="nav-current" href="#projects" aria-current="page">PROJECTS</a>
+        <button type="button" data-dialog="about-dialog">ABOUT</button>
+        <button type="button" data-dialog="contact-dialog">CONTACT</button>
       </nav>
-    </header>
+      <span class="header-note">WEB &amp; APP</span>
+    </div>
+  </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <h1 id="hero-title">안녕하세요<br /><span>웹·앱 서비스 기획 및 개발자 <span class="intro-name">Dotoryman입니다.</span></span></h1>
-          <p class="lead">IT 회사에서 기획하고, 개인 웹·앱 서비스를 만듭니다.</p>
-          <div class="hero-actions" aria-label="Dotoryman 소셜 링크">
-            <a class="social-button" href="https://www.instagram.com/dotoryman/" target="_blank" rel="noreferrer">Instagram <span>↗</span></a>
-            <a class="social-button" href="https://github.com/Dotoryman" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+  <main id="projects" class="catalogue">
+    <h1 class="sr-only">Dotoryman의 웹·앱 서비스</h1>
+    <div class="filters" role="group" aria-label="서비스 분류">
+      <button type="button" data-filter="all" aria-pressed="true">ALL</button>
+      <button type="button" data-filter="web" aria-pressed="false">WEB</button>
+      <button type="button" data-filter="app" aria-pressed="false">APP</button>
+      <button type="button" data-filter="upcoming" aria-pressed="false">IN DEVELOPMENT</button>
+    </div>
+    <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+
+    <div class="project-grid">
+      <article class="project" data-kind="web" data-status="archived">
+        <a class="project-link" href="https://utangland.cloud/" target="_blank" rel="noopener noreferrer" aria-label="우땅랜드 — 우땅이 팬페이지 (현재 서비스 중지), 새 창">
+          <div class="project-visual visual-land">
+            <img class="project-art" src="./assets/utangland-icon.webp" alt="우땅랜드의 웃는 우땅이 얼굴" width="234" height="244" fetchpriority="high" decoding="async" />
           </div>
-        </div>
-      </section>
+          <div class="project-caption"><div class="caption-heading"><h2>우땅랜드</h2><span class="project-status">ARCHIVED</span></div><p>우땅이 팬페이지 <span class="caption-status">(현재 서비스 중지)</span></p></div>
+        </a>
+      </article>
+      <article class="project" data-kind="web">
+        <a class="project-link" href="https://utangbaseball.cloud/" target="_blank" rel="noopener noreferrer" aria-label="우땅야구 — 우땅이와 함께하는 야구게임, 새 창">
+          <div class="project-visual visual-baseball"><img class="project-art" src="./assets/utangbaseball-icon.webp" alt="햇님 모양의 우땅야구 아이콘" width="512" height="512" decoding="async" /></div>
+          <div class="project-caption"><h2>우땅야구</h2><p>우땅이와 함께하는 야구게임</p></div>
+        </a>
+      </article>
+      <article class="project" data-kind="web">
+        <a class="project-link" href="https://backto2000.cloud/" target="_blank" rel="noopener noreferrer" aria-label="backto2000 — 2000년대 인터넷의 추억과 감성, 새 창">
+          <div class="project-visual visual-back"><img class="project-art" src="./assets/backto2000-icon.webp" alt="블랙베리 휴대전화가 담긴 backto2000 아이콘" width="600" height="600" decoding="async" /></div>
+          <div class="project-caption"><h2>backto2000</h2><p>2000년대 인터넷의 추억과 감성</p></div>
+        </a>
+      </article>
+      <article class="project" data-kind="web">
+        <a class="project-link" href="https://sajusaju.cloud/" target="_blank" rel="noopener noreferrer" aria-label="사주사주 — 내 생일은 어떤 캐릭터와 닮았을까?, 새 창">
+          <div class="project-visual visual-saju"><img class="project-art" src="./assets/sajusaju-characters-icon.webp" alt="여러 애니메이션 캐릭터가 담긴 사주사주 아이콘" width="600" height="600" loading="lazy" decoding="async" /></div>
+          <div class="project-caption"><h2>사주사주</h2><p>내 생일은 어떤 캐릭터와 닮았을까?</p></div>
+        </a>
+      </article>
+      <article class="project" data-kind="web">
+        <a class="project-link" href="https://christmasvillage.cloud/" target="_blank" rel="noopener noreferrer" aria-label="크리스마스 마을 — 크리스마스가 머지않았어요 크리스마스마을에 방문하세요, 새 창">
+          <div class="project-visual visual-christmas"><img class="project-art" src="./assets/christmas-village.webp" alt="눈 내리는 숲속의 따뜻한 크리스마스 오두막" width="450" height="800" loading="lazy" decoding="async" /></div>
+          <div class="project-caption"><h2>크리스마스 마을</h2><p>크리스마스가 머지않았어요<br />크리스마스마을에 방문하세요</p></div>
+        </a>
+      </article>
+      <article class="project" data-kind="app" data-status="upcoming">
+        <button class="project-link project-coming" type="button" data-dialog="upcoming-dialog" aria-label="도토리카운트 개발 예정 안내 보기">
+          <div class="project-visual visual-count"><img class="project-art" src="./assets/dotorycount-icon.webp" alt="유리병에 도토리가 쌓여 있는 도토리카운트 아이콘" width="600" height="600" loading="lazy" decoding="async" /></div>
+          <div class="project-caption"><div class="caption-heading"><h2>도토리카운트</h2><span class="project-status status-upcoming">COMING SOON</span></div><p>날짜와 추억을 차곡차곡 모으는 앱</p></div>
+        </button>
+      </article>
+    </div>
+  </main>
 
-      <section class="services" aria-labelledby="services-title">
-        <h2 id="services-title">만들고 있는 웹·앱 서비스들</h2>
+  <footer class="site-footer">
+    <a class="footer-wordmark" href="/">DOTORYMAN</a>
+    <p>웹·앱 서비스 기획 및 개발</p>
+    <div class="footer-links"><a href="https://www.instagram.com/dotoryman/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://github.com/Dotoryman" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    <small>© 2026 DOTORYMAN</small>
+  </footer>
 
-        <div class="app-shelf" aria-label="서비스 바로보기">
-          <a class="app-item" href="https://utangland.cloud/" target="_blank" rel="noreferrer" aria-label="우땅랜드 서비스 열기">
-            <span class="app-icon"><img src="./assets/utangland-icon.png" alt="" /></span>
-            <span class="app-name">우땅랜드</span>
-          </a>
-          <a class="app-item" href="https://utangbaseball.cloud/" target="_blank" rel="noreferrer" aria-label="우땅야구 서비스 열기">
-            <span class="app-icon"><img src="./assets/utangbaseball-icon.png" alt="" /></span>
-            <span class="app-name">우땅야구</span>
-          </a>
-          <a class="app-item" href="https://backto2000.cloud/" target="_blank" rel="noreferrer" aria-label="backto2000 서비스 열기">
-            <span class="app-icon"><img src="./assets/backto2000-icon.png" alt="" /></span>
-            <span class="app-name">backto2000</span>
-          </a>
-          <a class="app-item" href="https://sajusaju.cloud/" target="_blank" rel="noreferrer" aria-label="사주사주 서비스 열기">
-            <span class="app-icon"><img src="./assets/sajusaju-characters-icon.png" alt="" /></span>
-            <span class="app-name">사주사주</span>
-          </a>
-          <a class="app-item" href="https://christmasvillage.cloud/" target="_blank" rel="noreferrer" aria-label="크리스마스 마을 서비스 열기">
-            <span class="app-icon"><img src="./assets/christmas-village.webp" alt="" /></span>
-            <span class="app-name">크리스마스 마을</span>
-          </a>
-        </div>
-
-        <div class="service-list" aria-label="서비스 소개">
-          <a class="service-row" id="service-land" href="https://utangland.cloud/" target="_blank" rel="noreferrer" aria-label="우땅랜드 서비스 열기">
-            <div class="mini-icon"><img src="./assets/utangland-icon.png" alt="" /></div>
-            <div><h3>우땅랜드</h3><p>우땅이 팬페이지 (현재 서비스 중지)</p></div>
-          </a>
-          <a class="service-row" id="service-baseball" href="https://utangbaseball.cloud/" target="_blank" rel="noreferrer" aria-label="우땅야구 서비스 열기">
-            <div class="mini-icon"><img src="./assets/utangbaseball-icon.png" alt="" /></div>
-            <div><h3>우땅야구</h3><p>우땅이와 함께하는 야구게임</p></div>
-          </a>
-          <a class="service-row" id="service-2000" href="https://backto2000.cloud/" target="_blank" rel="noreferrer" aria-label="backto2000 서비스 열기">
-            <div class="mini-icon"><img src="./assets/backto2000-icon.png" alt="" /></div>
-            <div><h3>backto2000</h3><p>2000년대 인터넷의 추억과 감성을 다시 꺼내보는 아카이브</p></div>
-          </a>
-          <a class="service-row" id="service-saju" href="https://sajusaju.cloud/" target="_blank" rel="noreferrer" aria-label="사주사주 서비스 열기">
-            <div class="mini-icon"><img src="./assets/sajusaju-characters-icon.png" alt="" /></div>
-            <div><h3>사주사주</h3><p>내 생일은 어떤 캐릭터와 닮았을까?</p></div>
-          </a>
-          <a class="service-row" id="service-christmas" href="https://christmasvillage.cloud/" target="_blank" rel="noreferrer" aria-label="크리스마스 마을 서비스 열기">
-            <div class="mini-icon"><img src="./assets/christmas-village.webp" alt="" /></div>
-            <div><h3>크리스마스 마을</h3><p>크리스마스가 머지않았어요 크리스마스마을에 방문하세요</p></div>
-          </a>
-        </div>
-      </section>
-
-      <section class="in-development" aria-labelledby="development-title">
-        <h2 id="development-title">개발 예정인 웹·앱 서비스들</h2>
-        <div class="app-shelf development-shelf" aria-label="개발 예정 서비스">
-          <div class="app-item">
-            <span class="app-icon dotorycount-icon"><img src="./assets/dotorycount-icon.png" alt="유리병에 도토리가 쌓여 있는 도토리카운트 아이콘" /></span>
-            <span class="app-name">도토리카운트</span>
-            <span class="app-description">날짜와 추억을 차곡차곡 모으는 앱</span>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer><span>© 2026 DOTORYMAN</span><a href="https://www.instagram.com/dotoryman/" target="_blank" rel="noreferrer">@dotoryman ↗</a></footer>
-    <script src="./script.js"></script>
-  </body>
+  <dialog id="about-dialog" class="info-dialog" aria-labelledby="about-label">
+    <button type="button" class="dialog-close" aria-label="소개 닫기" data-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    <span id="about-label" class="dialog-label">ABOUT</span>
+    <p>안녕하세요.<br />웹·앱 서비스 기획 및 개발자<br /><strong>Dotoryman</strong>입니다.</p>
+    <p>IT 회사에 근무중이고 기획, 웹·앱 서비스를 제작합니다.</p>
+    <a class="text-link" href="https://github.com/Dotoryman" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </dialog>
+  <dialog id="contact-dialog" class="info-dialog" aria-label="Contact">
+    <button type="button" class="dialog-close" aria-label="연락처 닫기" data-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    <div class="contact-list"><a href="https://www.instagram.com/dotoryman/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><span>@dotoryman</span></a><a href="https://github.com/Dotoryman" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>Dotoryman</span></a></div>
+  </dialog>
+  <dialog id="upcoming-dialog" class="info-dialog" aria-labelledby="upcoming-title">
+    <button type="button" class="dialog-close" aria-label="개발 예정 안내 닫기" data-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    <span class="dialog-label">IN DEVELOPMENT</span>
+    <h2 id="upcoming-title">도토리카운트</h2>
+    <p>날짜와 추억을<br />차곡차곡 모으는 앱.</p>
+    <p class="dialog-note">아직 준비 중입니다.<br />서비스를 열면 이곳에 링크를 연결할게요.</p>
+  </dialog>
+</body>
 </html>
